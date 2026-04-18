@@ -1,27 +1,43 @@
 import React from "react";
 import farm from "../assets/heroImg.jpg";
+import { FaStar } from "react-icons/fa";
+
+import { ImPower } from "react-icons/im";
+
 
 const Hero = () => {
   return (
-    <main className="min-h-screen mt-10 lg:mt-0 flex items-center bg-gradient-to-r from-green-50 to-emerald-50">
+    <main className="min-h-screen mt-10 lg:mt-0 flex items-center bg-gradient-to-r from-green-50 to-emerald-50 relative">
+
+     <div class="custom-shape-divider-bottom-1776530758">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      </svg>
+    </div>
 
       <div className="w-full max-w-6xl mx-auto px-6 md:px-10 lg:px-15 py-10">
 
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
 
           {/* LEFT CONTENT */}
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2 relative">
 
             <div className="flex flex-col gap-6 items-center lg:items-start">
 
               {/* Badge */}
-              <div className="w-fit px-4 py-1 rounded-full bg-green-100 text-emerald-900 border border-emerald-200 text-sm font-medium">
-                100% Pure and Organic
+              <div className="flex flex-col md:flex-row gap-2">
+                  <div className="w-55 px-4 flex items-center justify-center gap-2 py-1 rounded-md bg-green-100 text-yellow-400 border border-emerald-200 text-sm font-medium">
+                   <FaStar /> 100% Pure and Organic
+                  </div>
+                  <div className="w-55 flex items-center justify-center gap-2 px-4 py-1 rounded-md bg-green-100 text-yellow-400 border border-emerald-200 text-sm font-medium">
+                    <ImPower /> Rich in Nutrients  
+                  </div>
               </div>
+              
 
               {/* Heading */}
               <h1 className="text-3xl md:text-5xl  font-bold leading-tight text-emerald-900">
-                Taste the Purity of Real Desi Ghee
+                Taste the Purity of Real Desi Ghee 
               </h1>
 
               {/* Paragraph */}

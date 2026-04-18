@@ -1,0 +1,26 @@
+
+
+.fancy-border{
+    border: 1px solid black;
+    border-radius: 100% 0% 100% 0% / 36% 69% 31% 64% ;
+}
+.custom-shape-divider-bottom-1776530758 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1776530758 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 49px;
+}
+
+.custom-shape-divider-bottom-1776530758 .shape-fill {
+    fill: #FFFFFF;
+}
