@@ -9,9 +9,9 @@ const Hero = () => {
   return (
     <main className="min-h-screen mt-10 lg:mt-0 flex items-center bg-gradient-to-r from-green-50 to-emerald-50 relative">
 
-     <div class="custom-shape-divider-bottom-1776530758">
+     <div className="custom-shape-divider-bottom-1776530758">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className="shape-fill"></path>
       </svg>
     </div>
 
@@ -52,14 +52,14 @@ const Hero = () => {
 
                 <a
                   href="#"
-                  className="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-full text-center font-medium transition"
+                  className="bg-yellow-400 border border-yellow-400 hover:text-yellow-400 hover:bg-transparent text-white px-7 py-3 rounded-full text-center font-medium transition-all duration-300"
                 >
                   Shop Now
                 </a>
 
                 <a
                   href="#"
-                  className="bg-white border border-emerald-200 text-emerald-900 px-6 py-3 rounded-full text-center font-medium hover:bg-emerald-50 transition"
+                  className="bg-white border border-yellow-200 text-emerald-900 px-6 py-3 rounded-full text-center font-medium hover:bg-yellow-50 transition"
                 >
                   View Products
                 </a>

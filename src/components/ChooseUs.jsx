@@ -1,7 +1,34 @@
 import React from "react";
 
+import gheeVideo from '../assets/gheeProcess.mp4'
+
 
 const ChooseUs = () => {
+
+
+  const cardsData = [
+    {
+      id:1,
+      title:"Traditional Method",
+      desc:"Hand churned using age old techniques to preserve nutrients."
+    },
+       {
+      id:2,
+      title:" Farm Fresh Milk",
+      desc:"Sourced directly from local farms to ensure purity."
+    },
+       {
+      id:3,
+      title:"No Chemicals Added",
+      desc:"Completely natural process with no preservatives or additives."
+    },
+    {
+      id:4,
+      title:"Rich in Nutrition",
+      desc:"Supports digestion and provides natural energy for daily life."
+    }
+  ]
+
   return (
     <section className="py-16 ">
 
@@ -22,41 +49,18 @@ const ChooseUs = () => {
           {/* LEFT - CARDS */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full lg:w-1/2">
 
-            <div className="bg-white hover:scale-105 hover:cursor-default transition-all duration-300 p-5 rounded-2xl shadow-md border border-yellow-100">
-              <h3 className="font-semibold text-lg text-yellow-400">
-                Traditional Method
-              </h3>
-              <p className="text-gray-500 text-sm mt-2">
-                Hand churned using age old techniques to preserve nutrients.
-              </p>
-            </div>
+            {cardsData.map((item)=>(
+              <div key={item.id} className="bg-white hover:scale-105 hover:cursor-default transition-all duration-300 p-5 rounded-2xl shadow-md border border-yellow-100">
+                  <h3 className="font-semibold text-lg text-yellow-400">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-500 text-sm mt-2">
+                   {item.desc}
+                  </p>
+              </div>
+            ))}
 
-            <div className="bg-white p-5 rounded-2xl shadow-md border border-amber-100">
-              <h3 className="font-semibold text-lg text-yellow-400">
-                Farm Fresh Milk
-              </h3>
-              <p className="text-gray-600 text-sm mt-2">
-                Sourced directly from local farms to ensure purity.
-              </p>
-            </div>
-
-            <div className="bg-white p-5 rounded-2xl shadow-md border border-amber-100">
-              <h3 className="font-semibold text-lg text-yellow-400">
-                No Chemicals Added
-              </h3>
-              <p className="text-gray-600 text-sm mt-2">
-                Completely natural process with no preservatives or additives.
-              </p>
-            </div>
-
-            <div className="bg-white p-5 rounded-2xl shadow-md border border-amber-100">
-              <h3 className="font-semibold text-lg text-yellow-400">
-                Rich in Nutrition
-              </h3>
-              <p className="text-gray-600 text-sm mt-2">
-                Supports digestion and provides natural energy for daily life.
-              </p>
-            </div>
+            
 
           </div>
 
@@ -66,12 +70,13 @@ const ChooseUs = () => {
             <div className="rounded-3xl overflow-hidden shadow-lg">
 
               <video
-                src=""
+                src={gheeVideo}
                 controls
                 autoPlay
                 loop
                 muted
-                className="w-full h-75 object-cover"
+                
+                className="w-full h-80 object-cover"
               />
 
             </div>
