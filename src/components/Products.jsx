@@ -1,6 +1,8 @@
 import React from "react";
 import ProductCard from "./ProductCard";
 import product1 from '../assets/products/product1.jpeg'
+import product2 from '../assets/products/product2.webp'
+
 
 const productsData = [
     {
@@ -13,6 +15,16 @@ const productsData = [
         weight:"1kg",
         bestSeller:true,
     },
+     {
+        id:4,
+        shortTitle:"Cow's Milk Butter 2KG",
+        fullTitle:"Cow's Milk Butter Natural Unsalted Frozen 2KG",
+        desc:"Pure natural cow milk butter",
+        img:product2,
+        price:5000,
+        weight:"2kg",
+        bestSeller:false,
+    },
      
      {
         id:3,
@@ -24,28 +36,20 @@ const productsData = [
         weight:"2kg",
         bestSeller:false,
     },
+     
 
     {
         id:2,
         shortTitle:"Cow's Milk Butter 1KG",
         fullTitle:"Cow's Milk Butter Natural Unsalted Frozen 1KG",
-        desc:"Rich aroma and traditional taste",
-        img:product1,
+        desc:"Pure natural cow milk butter",
+        img:product2,
         price:2500,
         weight:"1kg",
         bestSeller:true,
     },
 
-    {
-        id:4,
-        shortTitle:"Cow's Milk Butter 2KG",
-        fullTitle:"Cow's Milk Butter Natural Unsalted Frozen 2KG",
-        desc:"Rich aroma and traditional taste",
-        img:product1,
-        price:5000,
-        weight:"2kg",
-        bestSeller:false,
-    }
+  
 ]
 
 
