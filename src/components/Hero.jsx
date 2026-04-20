@@ -7,7 +7,7 @@ import { ImPower } from "react-icons/im";
 
 const Hero = () => {
   return (
-    <main className="min-h-screen mt-10 lg:mt-0 flex items-center bg-gradient-to-r from-green-50 to-emerald-50 relative">
+    <main className="min-h-screen mt-10 lg:mt-0 flex items-center bg-linear-to-r from-green-50 to-emerald-50 relative">
 
      <div className="custom-shape-divider-bottom-1776530758">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -72,7 +72,7 @@ const Hero = () => {
           {/* RIGHT IMAGE */}
           <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
 
-            <div className="w-full max-w-sm md:max-w-md lg:max-w-lg h-[300px] md:h-[400px] rounded-3xl overflow-hidden shadow-lg">
+            <div className="w-full max-w-sm md:max-w-md lg:max-w-lg h-75 md:h-100 rounded-3xl overflow-hidden shadow-lg">
 
               <img
                 src={farm}

@@ -1,5 +1,53 @@
 import React from "react";
 import ProductCard from "./ProductCard";
+import product1 from '../assets/products/product1.jpeg'
+
+const productsData = [
+    {
+        id:1,
+        shortTitle:"Cow's Milk Desi Ghee 1KG",
+        fullTitle:"Cow's Milk Desi Ghee 1KG Bucket",
+        desc:"Rich aroma and traditional taste",
+        img:product1,
+        price:3000,
+        weight:"1kg",
+        bestSeller:true,
+    },
+     
+     {
+        id:3,
+        shortTitle:"Cow's Milk Desi Ghee 2KG",
+        fullTitle:"Cow's Milk Desi Ghee 2KG Bucket",
+        desc:"Rich aroma and traditional taste",
+        img:product1,
+        price:6000,
+        weight:"2kg",
+        bestSeller:false,
+    },
+
+    {
+        id:2,
+        shortTitle:"Cow's Milk Butter 1KG",
+        fullTitle:"Cow's Milk Butter Natural Unsalted Frozen 1KG",
+        desc:"Rich aroma and traditional taste",
+        img:product1,
+        price:2500,
+        weight:"1kg",
+        bestSeller:true,
+    },
+
+    {
+        id:4,
+        shortTitle:"Cow's Milk Butter 2KG",
+        fullTitle:"Cow's Milk Butter Natural Unsalted Frozen 2KG",
+        desc:"Rich aroma and traditional taste",
+        img:product1,
+        price:5000,
+        weight:"2kg",
+        bestSeller:false,
+    }
+]
+
 
 const Products = () => {
   return (
@@ -14,10 +62,12 @@ const Products = () => {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 xl:grid-cols-4 md:gap-4 lg:gap-3 mt-12">
-         <ProductCard />
-         <ProductCard />
-         <ProductCard />
-         <ProductCard />
+         
+        {
+            productsData.map((product)=>(
+                <ProductCard key={product.id}  product = {product} />
+            ))
+        }
         </div>
       </div>
     </section>

@@ -1,20 +1,20 @@
 import React from "react";
-import product1 from '../assets/products/product1.jpeg'
 
-const ProductCard = () => {
+
+const ProductCard = ({product}) => {
   return (
     <div className="group bg-white/80 backdrop-blur-md border border-amber-100 
     p-4 rounded-3xl shadow-sm hover:shadow-xl transition duration-300 text-center">
 
       {/* Badge */}
-      <div className="absolute mt-2 ml-2 bg-amber-400 text-white text-xs px-3 py-1 rounded-full">
+      <div className={`${product.bestSeller?'visible':'hidden'}  absolute mt-2 ml-2 bg-green-400 text-white text-xs px-3 py-1 rounded-full`}>
         Best Seller
       </div>
 
       {/* Image */}
       <div className="overflow-hidden rounded-2xl">
         <img
-          src={product1}
+          src={product.img}
           alt="Desi Ghee"
           className="mx-auto w-full h-50 object-cover transition duration-500 group-hover:scale-110"
         />
@@ -22,16 +22,16 @@ const ProductCard = () => {
 
       {/* Content */}
       <h3 className="mt-2 font-semibold text-lg text-[#3A2E2A]">
-        Cow's Milk Desi Ghee 1Kg
+        {product.shortTitle}
       </h3>
 
       <p className="text-sm text-gray-500 mt-2">
-        Rich aroma and traditional taste
+        {product.desc}
       </p>
 
       {/* Price */}
       <p className="mt-3 text-lg font-bold text-amber-500">
-        Rs 2999
+        Rs {product.price}
       </p>
 
       {/* CTA */}
