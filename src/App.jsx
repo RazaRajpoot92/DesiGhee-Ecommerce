@@ -1,5 +1,6 @@
 import './App.css'
 import ChooseUs from './components/ChooseUs'
+import FounderSection from './components/FounderSection'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Products from './components/Products'
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <ChooseUs />
         <Products />
+        <FounderSection />
     
       
       <div className='h-screen'></div>

@@ -1,8 +1,8 @@
 
 
 .fancy-border{
-    border: 1px solid black;
-    border-radius: 100% 0% 100% 0% / 36% 69% 31% 64% ;
+    border: 1px solid #DCFCE7;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
 }
 .custom-shape-divider-bottom-1776530758 {
     position: absolute;
