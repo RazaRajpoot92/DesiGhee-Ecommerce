@@ -4,6 +4,7 @@ import FounderSection from './components/FounderSection'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Products from './components/Products'
+import TestimonialSection from './components/TestimonialSection'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <ChooseUs />
         <Products />
         <FounderSection />
+        <TestimonialSection />
     
       
       <div className='h-screen'></div>

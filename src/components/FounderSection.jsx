@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/img1.png";
+import img from "../assets/founderImg.jpeg";
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaQuoteRight } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
@@ -19,7 +19,7 @@ const FounderSection = () => {
       </div>
 
       {/* Content */}
-      <div className="flex flex-col-reverse md:flex-row items-center gap-10">
+      <div className="flex lg:ml-12 flex-col-reverse md:flex-row items-center gap-10">
         {/* Left - Text */}
         <div className="md:w-1/2 space-y-6">
           <h2 className="text-xl font-semibold text-emerald-800">
@@ -62,7 +62,7 @@ const FounderSection = () => {
             <img
               src={img}
               alt="Areesha Tallat"
-              className="w-72 md:w-96 fancy-border border-green-300 shadow-xl object-cover"
+              className="w-72 md:ml-4 md:w-96 fancy-border border-green-300 shadow-xl object-cover"
             />
             {/* <div className="absolute inset-0 rounded-2xl ring-1 ring-emerald-200"></div> */}
           </div>
