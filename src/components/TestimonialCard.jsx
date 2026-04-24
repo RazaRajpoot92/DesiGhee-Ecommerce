@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import review from "../assets/review1.jpg";
 import reviewImg from "../assets/reviewPic.jpg";
 
-const TestimonialCard = () => {
+const TestimonialCard = ({name}) => {
   const [selectedImg, setSelectedImg] = useState(null);
 
   const images = [review, review, review];
@@ -30,7 +30,7 @@ const TestimonialCard = () => {
 
         {/* Name */}
         <p className="mt-5 font-semibold text-[#3A2E2A]">
-          Ahmad Raza
+          {name}
         </p>
 
         {/* WhatsApp Images */}

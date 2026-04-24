@@ -9,8 +9,8 @@ const FounderSection = () => {
     <section className="py-16 px-6 md:px-16 bg-gradient-to-b from-white to-emerald-50">
       {/* Heading */}
       <div className="text-center mb-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-emerald-800 flex justify-center gap-2">
-          From Our Founder's <span className="text-yellow-400">Heart</span>{" "}
+        <h1 className="text-xl xm:text-2xl sm:text-4xl md:text-5xl font-bold text-emerald-800 flex justify-center gap-2">
+          From Our Founder's <span className="text-yellow-400">Heart</span>
           <FaHeart className="text-yellow-400" />
         </h1>
         <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
